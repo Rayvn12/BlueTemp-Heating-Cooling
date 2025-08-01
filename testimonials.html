@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | BlueTemp HVAC</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+</head>
+
+<!-- Consistent Header -->
+  <header>
+    <div class="logo">BlueTemp Heating & Cooling</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About Us</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="contact-buttons">
+      <div class="phone-button"><button>555-555-5555</button></div>
+      <div class="emergency-button">Emergency</div>
+    </div>
+  </header>
+
+<body>
+
+<section class="testimonial-intro">
+  <h1>What Our Customers Are Saying</h1>
+  <p>
+    We're proud to keep homes and businesses comfortable year-round.
+    Here's what our customers have to say about their experience with us.
+  </p>
+</section>
+
+<section class="testimonial-carousel" id="testimonial-carousel">
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-slide active">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">
+        "BlueTemp HVAC saved our summer! Our AC unit broke down during a heatwave,
+        and they had a technician at our house within 2 hours. Professional, honest
+        pricing, and the repair has lasted perfectly for over a year now."
+      </p>
+      <div class="reviewer-info">
+        <img src="images/sarah-avatar.png" alt="Sarah M." class="reviewer-img" />
+        <div>
+          <strong>Sarah M.</strong><br />
+          <span class="review-details">AC Repair • Austin, TX</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-slide">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">
+        "Mike and his team installed our new AC unit last summer. On-time, professional, and the price was fair.
+        Highly recommend!"
+      </p>
+      <div class="reviewer-info">
+        <img src="images/jennifer-avatar.png" alt="Jennifer Walsh" class="reviewer-img" />
+        <div>
+          <strong>Jennifer Walsh</strong><br />
+          <span class="review-details">New AC Install • Dallas, TX</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-slide">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">
+        "Emergency furnace repair on Christmas Eve — they came out same day and had us warm again in no time.
+        Excellent service!"
+      </p>
+      <div class="reviewer-info">
+        <img src="images/robert-avatar.png" alt="Robert Kim" class="reviewer-img" />
+        <div>
+          <strong>Robert Kim</strong><br />
+          <span class="review-details">Furnace Repair • Chicago, IL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Arrows -->
+  <button class="nav-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+  <button class="nav-btn next" onclick="changeSlide(1)">&#10095;</button>
+
+  <!-- Dots -->
+  <div class="carousel-dots">
+    <span class="dot active" onclick="goToSlide(0)"></span>
+    <span class="dot" onclick="goToSlide(1)"></span>
+    <span class="dot" onclick="goToSlide(2)"></span>
+  </div>
+</section>
+
+ <section class="static-review-grid" style="padding: 40px 0; background: #f9f9f9;">
+  <div class="review-grid-container" style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+    
+    <!-- Review 1 -->
+    <div class="review-card" style="background: white; border-radius: 8px; padding: 20px; width: 300px;">
+      <div style="color: #000;">★★★★★</div>
+      <p style="font-size: 14px; margin: 10px 0;">"Excellent service from start to finish. They installed our new furnace quickly and explained everything clearly. Very professional team."</p>
+      <div style="font-weight: bold;">Mike R.</div>
+      <div style="font-size: 12px;">Dallas, TX</div>
+      <div style="font-size: 12px; background: #f0f0f0; padding: 4px 10px; border-radius: 12px; display: inline-block; margin-top: 8px;">Furnace Installation</div>
+    </div>
+
+    <!-- Review 2 -->
+    <div class="review-card" style="background: white; border-radius: 8px; padding: 20px; width: 300px;">
+      <div style="color: #000;">★★★★★</div>
+      <p style="font-size: 14px; margin: 10px 0;">"Fair pricing and honest recommendations. They could have sold us a new unit but showed us how to fix our existing one instead."</p>
+      <div style="font-weight: bold;">Jennifer L.</div>
+      <div style="font-size: 12px;">Houston, TX</div>
+      <div style="font-size: 12px; background: #f0f0f0; padding: 4px 10px; border-radius: 12px; display: inline-block; margin-top: 8px;">HVAC Maintenance</div>
+    </div>
+
+    <!-- Review 3 -->
+    <div class="review-card" style="background: white; border-radius: 8px; padding: 20px; width: 300px;">
+      <div style="color: #000;">★★★★★</div>
+      <p style="font-size: 14px; margin: 10px 0;">"Called them for an emergency repair on Sunday. They came out the same day and had us cool again in no time. Highly recommend!"</p>
+      <div style="font-weight: bold;">David K.</div>
+      <div style="font-size: 12px;">San Antonio, TX</div>
+      <div style="font-size: 12px; background: #f0f0f0; padding: 4px 10px; border-radius: 12px; display: inline-block; margin-top: 8px;">Emergency Repair</div>
+    </div>
+
+    <!-- Review 4 -->
+    <div class="review-card" style="background: white; border-radius: 8px; padding: 20px; width: 300px;">
+      <div style="color: #000;">★★★★★</div>
+      <p style="font-size: 14px; margin: 10px 0;">"Professional installation and great follow-up service. Our energy bills have dropped significantly since the new system was installed."</p>
+      <div style="font-weight: bold;">Lisa T.</div>
+      <div style="font-size: 12px;">Fort Worth, TX</div>
+      <div style="font-size: 12px; background: #f0f0f0; padding: 4px 10px; border-radius: 12px; display: inline-block; margin-top: 8px;">System Replacement</div>
+    </div>
+
+    <!-- Review 5 -->
+    <div class="review-card" style="background: white; border-radius: 8px; padding: 20px; width: 300px;">
+      <div style="color: #000;">★★★★★</div>
+      <p style="font-size: 14px; margin: 10px 0;">"Clean, efficient work and transparent pricing. The technician explained everything and left our home spotless after the installation."</p>
+      <div style="font-weight: bold;">Robert M.</div>
+      <div style="font-size: 12px;">Plano, TX</div>
+      <div style="font-size: 12px; background: #f0f0f0; padding: 4px 10px; border-radius: 12px; display: inline-block; margin-top: 8px;">AC Installation</div>
+    </div>
+
+    <!-- Review 6 -->
+    <div class="review-card" style="background: white; border-radius: 8px; padding: 20px; width: 300px;">
+      <div style="color: #000;">★★★★★</div>
+      <p style="font-size: 14px; margin: 10px 0;">"Responsive customer service and skilled technicians. They've been maintaining our commercial HVAC system for 3 years now."</p>
+      <div style="font-weight: bold;">Amanda S.</div>
+      <div style="font-size: 12px;">Irving, TX</div>
+      <div style="font-size: 12px; background: #f0f0f0; padding: 4px 10px; border-radius: 12px; display: inline-block; margin-top: 8px;">Commercial Service</div>
+    </div>
+
+  </div>
+</section>
+
+<section class="share-experience">
+  <h2>Share Your Experience</h2>
+  <p>
+    Had a great experience with us? We'd love to hear from you! Share your review on one of these platforms.
+  </p>
+
+  <div class="review-buttons">
+    <a href="https://www.google.com/maps" target="_blank" class="review-btn">
+      <i class="fab fa-google"></i> Google Reviews
+    </a>
+    <a href="https://www.yelp.com" target="_blank" class="review-btn">
+      <i class="fab fa-yelp"></i> Yelp
+    </a>
+    <a href="https://www.facebook.com" target="_blank" class="review-btn">
+      <i class="fab fa-facebook"></i> Facebook
+    </a>
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-column">
+      <h3>❄️ BlueTemp HVAC</h3>
+      <p>Your trusted partner for all heating, cooling, and air quality solutions in the Atlanta area.</p>
+      <div class="footer-socials">
+        <a href="#">🌐</a>
+        <a href="#">🐦</a>
+        <a href="#">📸</a>
+        <a href="#">📍</a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#">Air Conditioning</a></li>
+        <li><a href="#">Heating Systems</a></li>
+        <li><a href="#">Air Quality</a></li>
+        <li><a href="#">Maintenance Plans</a></li>
+        <li><a href="#">Commercial HVAC</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Service Areas</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Financing</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <ul>
+        <li>📍 1234 Cooling Ave, Atlanta, GA 30303</li>
+        <li>📞 555-555-5555</li>
+        <li>✉️ info@bluetemp.com</li>
+        <li>🕒 Mon–Fri: 8am–6pm</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 BlueTemp HVAC. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+</html>
